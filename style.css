@@ -1,6 +1,4 @@
-/* ==========================================================================
-   Variáveis Globais e Reset
-   ========================================================================== */
+/* Variáveis Globais e Reset */
 :root {
   --bg-color: #0b0c10;
   --bg-alt-color: #12141c;
@@ -9,7 +7,7 @@
   
   --primary-color: #f4f4f7;
   --secondary-color: #a0a5b5;
-  --accent-color: #d4af37; /* Dourado / Champagne */
+  --accent-color: #d4af37;
   --accent-hover: #f1c40f;
   
   --font-serif: 'Cormorant Garamond', Georgia, serif;
@@ -37,9 +35,6 @@ body {
   overflow-x: hidden;
 }
 
-/* ==========================================================================
-   Tipografia e Estilos Gerais
-   ========================================================================== */
 h1, h2, h3, h4 {
   font-family: var(--font-serif);
   font-weight: 700;
@@ -102,9 +97,6 @@ a {
   margin-bottom: 15px;
 }
 
-/* ==========================================================================
-   Componentes (Botões, Cards e Grid)
-   ========================================================================== */
 .btn {
   display: inline-block;
   padding: 14px 32px;
@@ -156,9 +148,15 @@ a {
   transform: translateY(-5px);
 }
 
-/* ==========================================================================
-   Navegação
-   ========================================================================== */
+.resumo-card h3 {
+  color: var(--accent-color);
+  margin-bottom: 15px;
+}
+
+.resumo-card p strong {
+  color: var(--primary-color);
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -228,9 +226,6 @@ a {
   transition: var(--transition);
 }
 
-/* ==========================================================================
-   Hero Section
-   ========================================================================== */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -260,9 +255,6 @@ a {
   justify-content: center;
 }
 
-/* ==========================================================================
-   Sobre & M.V.V.
-   ========================================================================== */
 .about-stats {
   display: flex;
   flex-direction: column;
@@ -282,11 +274,6 @@ a {
   color: var(--accent-color);
 }
 
-.mvv-card .card-icon {
-  font-size: 2rem;
-  margin-bottom: 15px;
-}
-
 .mvv-card ul {
   list-style: none;
   margin-top: 10px;
@@ -298,9 +285,6 @@ a {
   margin-bottom: 8px;
 }
 
-/* ==========================================================================
-   Análise ODS
-   ========================================================================== */
 .analise-intro {
   margin-bottom: 40px;
 }
@@ -318,9 +302,6 @@ a {
   margin-bottom: 10px;
 }
 
-/* ==========================================================================
-   Rodapé
-   ========================================================================== */
 .footer {
   padding: 50px 0;
   border-top: 1px solid var(--card-border);
@@ -340,9 +321,7 @@ a {
   color: var(--secondary-color);
 }
 
-/* ==========================================================================
-   Responsividade
-   ========================================================================== */
+/* Responsividade */
 @media (max-width: 900px) {
   .grid-2, .grid-3 {
     grid-template-columns: 1fr;

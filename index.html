@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Verso — Análises Literárias & Impacto Social</title>
+  <title>Verso — Análises Literárias</title>
   
   <!-- Fontes do Google -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -24,9 +24,9 @@
       </button>
       <ul class="nav-links" id="navLinks">
         <li><a href="#sobre">Sobre Nós</a></li>
-        <li><a href="#mvv">M.V.V.</a></li>
-        <li><a href="#analise-ods">Análise Atual & ODS</a></li>
-        <li><a href="#contato" class="btn-nav">Fale Conosco</a></li>
+        <li><a href="#mvv">Missão, Visão e Valores</a></li>
+        <li><a href="#resumo">Resumo da Obra</a></li>
+        <li><a href="#analise-ods" class="btn-nav">Análise ODS</a></li>
       </ul>
     </div>
   </nav>
@@ -79,17 +79,14 @@
       </div>
       <div class="grid grid-3">
         <div class="card mvv-card">
-          <div class="card-icon">🎯</div>
           <h3>Missão</h3>
           <p>Democratizar e aprofundar o acesso à análise literária crítica, conectando clássicos e narrativas modernas aos desafios globais da humanidade.</p>
         </div>
         <div class="card mvv-card">
-          <div class="card-icon">👁️</div>
           <h3>Visão</h3>
-          <p>Ser a principal plataforma de inteligência literária do país, reconhecida por integrar cultura, educação de qualidade e responsabilidade social.</p>
+          <p>Consolidar-se como um espaço contínuo de diálogo cultural, promovendo leituras críticas acessíveis que estimulem o pensamento autônomo e a reflexão social.</p>
         </div>
         <div class="card mvv-card">
-          <div class="card-icon">💎</div>
           <h3>Valores</h3>
           <ul>
             <li><strong>Rigor Analítico:</strong> Leitura profunda e fundamentada.</li>
@@ -102,19 +99,35 @@
     </div>
   </section>
 
+  <!-- Resumo da Obra -->
+  <section id="resumo" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Resumo: A Cartomante</h2>
+        <p class="subtitle">Uma breve contextualização da narrativa de Machado de Assis antes do aprofundamento crítico.</p>
+      </div>
+      <div class="card resumo-card">
+        <h3>A Trama e a Ilusão</h3>
+        <p>O conto gira em torno do triângulo amoroso formado por Camilo, Rita e Vilela. Vilela é um advogado bem-sucedido e casado com Rita, enquanto Camilo é seu amigo de infância que se aproxima da família e acaba iniciando um caso adúltero e secreto com a esposa do amigo.</p>
+        <p>Diante do medo de ser descoberta, Rita passa a consultar com frequência uma cartomante, na qual deposita cega confiança. Camilo, inicialmente cético e guiado pela razão, debocha da superstição da amante. No entanto, a situação muda quando ele passa a receber cartas anônimas que denunciam a traição e ameaçam sua integridade.</p>
+        <p>Abalado e dominado pelo desespero após receber um chamado urgente do próprio Vilela para ir à sua casa, Camilo cede à fragilidade emocional e decide consultar a mesma cartomante. Tranquilizado pelas palavras otimistas da mulher, ele segue confiante ao encontro do amigo. Porém, ao chegar, encontra Rita morta e é imediatamente assassinado por Vilela, selando o desfecho em uma trágica e célebre ironia machadiana.</p>
+      </div>
+    </div>
+  </section>
+
   <!-- Análise Atual & ODS 2030 -->
-  <section id="analise-ods" class="section">
+  <section id="analise-ods" class="section bg-alt">
     <div class="container">
       <div class="section-header">
         <span class="badge badge-accent">Análise em Destaque</span>
-        <h2>A Cartomante (Machado de Assis) & os ODS 2030</h2>
+        <h2>A Cartomante & os ODS 2030</h2>
         <p class="subtitle">Como o realismo machadiano antecipa fragilidades institucionais, sociais e educacionais.</p>
       </div>
 
       <div class="analise-wrapper">
         <div class="analise-intro card">
           <h3>O Enredo e a Cegueira Social</h3>
-          <p>Em <em>A Cartomante</em>, Machado de Assis constrói um triângulo amoroso entre Camilo, Rita e Vilela, marcado por escolhas pautadas pela ilusão, pela falta de pensamento crítico e pela busca por atalhos místicos diante do desespero. Ao analisar a obra sob a ótica da **Agenda 2030 da ONU**, percebemos como a vulnerabilidade emocional e a ausência de letramento crítico refletem metas essenciais do desenvolvimento sustentável.</p>
+          <p>Em <em>A Cartomante</em>, Machado de Assis constrói um cenário marcado por escolhas pautadas pela ilusão, pela falta de pensamento crítico e pela busca por atalhos místicos diante do desespero. Ao analisar a obra sob a ótica da Agenda 2030 da ONU, percebemos como a vulnerabilidade emocional e a ausência de letramento crítico refletem metas essenciais do desenvolvimento sustentável.</p>
         </div>
 
         <div class="grid grid-3 ods-grid">
@@ -122,21 +135,21 @@
           <div class="card ods-card">
             <div class="ods-number">ODS 4</div>
             <h4>Educação de Qualidade</h4>
-            <p><strong>Conexão:</strong> Camilo recorre à cartomante movido pela ignorância e pela incapacidade de análise racional de sua realidade. A obra evidencia como a falta de pensamento crítico (pilar da Educação de Qualidade) torna o indivíduo refém de manipulações e soluções fáceis.</p>
+            <p>Camilo recorre à cartomante movido pela ignorância e pela incapacidade de análise rational de sua realidade. A obra evidencia como a falta de pensamento crítico (pilar da Educação de Qualidade) torna o indivíduo refém de manipulações e soluções fáceis.</p>
           </div>
 
           <!-- ODS 5 -->
           <div class="card ods-card">
             <div class="ods-number">ODS 5</div>
             <h4>Igualdade de Gênero</h4>
-            <p><strong>Conexão:</strong> A figura de Rita reflete a dependência psicológica e social da mulher no século XIX. Sua busca pela superstição revela as limitadas saídas autônomas e de proteção que a estrutura patriarcal oferecia às mulheres da época.</p>
+            <p>A figura de Rita reflete a dependência psicológica e social da mulher no século XIX. Sua busca pela superstição revela as limitadas saídas autônomas e de proteção que a estrutura patriarcal oferecia às mulheres da época.</p>
           </div>
 
           <!-- ODS 16 -->
           <div class="card ods-card">
             <div class="ods-number">ODS 16</div>
             <h4>Paz, Justiça e Instituições Efetivas</h4>
-            <p><strong>Conexão:</strong> O desfecho trágico e violento orquestrado por Vilela expõe o colapso da mediação pacífica de conflitos e a prevalência da justiça pelas próprias mãos em uma sociedade pautada por aparências morais.</p>
+            <p>O desfecho trágico e violento orquestrado por Vilela expõe o colapso da mediação pacífica de conflitos e a prevalência da justiça pelas próprias mãos em uma sociedade pautada por aparências morais.</p>
           </div>
         </div>
       </div>
@@ -144,7 +157,7 @@
   </section>
 
   <!-- Rodapé -->
-  <footer id="contato" class="footer">
+  <footer class="footer">
     <div class="container footer-container">
       <div class="footer-brand">
         <a href="#" class="logo">VERSO<span>.</span></a>
@@ -156,6 +169,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="js.js"></script>
 </body>
 </html>

@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. Efeito Navbar Sticky / Scroll
   const navbar = document.getElementById('navbar');
   
   window.addEventListener('scroll', () => {
@@ -10,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // 2. Menu Mobile Toggle
   const navToggle = document.getElementById('navToggle');
   const navLinks = document.getElementById('navLinks');
 
@@ -19,7 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
       navLinks.classList.toggle('active');
     });
 
-    // Fechar menu ao clicar em um link
     document.querySelectorAll('.nav-links a').forEach(link => {
       link.addEventListener('click', () => {
         navLinks.classList.remove('active');
@@ -27,7 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 3. Animação simples de Fade-In ao rolar a página (Intersection Observer)
   const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
@@ -42,8 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }, observerOptions);
-
-  // Aplicar efeito em cards e seções
+  
   const animatedElements = document.querySelectorAll('.card, .section-header');
   animatedElements.forEach(el => {
     el.style.opacity = '0';
