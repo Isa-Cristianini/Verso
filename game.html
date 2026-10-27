@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O Dilema de Camilo | Verso</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="game.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <a href="index.html" class="logo">VERSO<span>.</span></a>
+    <span class="topbar-tag">Game · A Cartomante</span>
+  </header>
+
+  <main class="game">
+    <!-- Indicadores ligados aos ODS -->
+    <section class="meters" id="meters" aria-label="Indicadores do jogo" hidden>
+      <div class="meter">
+        <div class="meter-head"><span>Pensamento crítico <b>ODS 4</b></span><span id="v-crit">50</span></div>
+        <div class="bar"><div class="fill" id="f-crit"></div></div>
+      </div>
+      <div class="meter">
+        <div class="meter-head"><span>Autonomia <b>ODS 5</b></span><span id="v-auton">50</span></div>
+        <div class="bar"><div class="fill" id="f-auton"></div></div>
+      </div>
+      <div class="meter">
+        <div class="meter-head"><span>Paz e justiça <b>ODS 16</b></span><span id="v-paz">50</span></div>
+        <div class="bar"><div class="fill" id="f-paz"></div></div>
+      </div>
+    </section>
+
+    <!-- Tela do jogo (renderizada pelo JS) -->
+    <div id="stage" class="stage" aria-live="polite"></div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Verso. Adaptação interativa inspirada em <em>A Cartomante</em>, de Machado de Assis. Não substitui a leitura da obra.</p>
+  </footer>
+
+  <script src="game.js"></script>
+</body>
+</html>
